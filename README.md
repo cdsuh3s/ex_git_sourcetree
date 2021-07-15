@@ -119,6 +119,43 @@ In order to be a version, *commit* action is necessary.
 
 ## Stage
 
+## Remote Repository
+
+GitHub site will be used.
+
+### Create a Remote Repository
+
+Create a new repository on GitHub.
+- public
+- empty : no `README`, `.gitignore`, license
+
+### Connect the Local Repository to the Remote Repository
+
+**Sourcetree**
+1. In the memubar, `[Repository] - [Add Remote...]`.
+1. In the `[Remotes]` tab, `[Add]`.
+1. Copy HTTPS address from remote repository page,
+Paste it in `[URL / Path]`.
+Information in the `[Optional extended integration]` will be changed to reflect GitHub.
+1. Check `[Default remote]` checkbox.
+`[Remote name]` is set to `origin`.
+1. `[OK]`. `[OK]`.
+1. In the sidebar, `origin` appears under `[Remote]`.
+
+origin : a kind of nickname for remote repository to make easy to use(call)
+
+### Push
+
+Synchronization, upload
+
+**Sourcetree**
+1. In the toolbar, `[Push]`.
+1. For `[Push to repository]`, select remote name `origin`.
+1. In the `[Branches to push]`,
+select the branches to push to the remote repository using checkbox.
+1. `[Push]`
+1. Visit and check the remote repository page.
+
 ## Reference
 - https://opentutorials.org
 
@@ -130,3 +167,26 @@ In order to be a version, *commit* action is necessary.
 `?? README.md`
 
 `git -rm --cached <file>...` to unstage
+
+## New repository on GitHub
+
+- HTTPS : https://github.com/cdsuh3s/ex_git_sourcetree.git
+- SSH : git@github.com:cdsuh3s/ex_git_sourcetree.git
+
+### Create a new repository on the command line
+```git
+echo "# ex_git_sourcetree" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:cdsuh3s/ex_git_sourcetree.git
+git push -u origin main
+```
+
+### Push an existing repository from the command line
+```git
+git remote add origin git@github.com:cdsuh3s/ex_git_sourcetree.git
+git branch -M main
+git push -u origin main
+```
