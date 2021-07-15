@@ -36,6 +36,27 @@ Create a file. (e.g. `README.md`)
 
 *Untracked* or *Not Tracked* means the files are in the repository, but not managed by git yet.
 
+## Start Tracking the Files
+
+**git bash**
+1. Type
+    ```
+    $ git add README.md
+    ```
+1. `git status` command now shows
+that `README.md` file is in the `Changes to be committed` section
+and indicated as `new file`.
+
+**Sourcetree**
+
+Now, the files begin to be tracked by git,
+but are not accepted as a version yet.
+In order to be a version, *commit* action is necessary.
+
 ## Stage
 
 ## Commit
+
+`?? README.md`
+
+`git -rm --cached <file>...` to unstage
