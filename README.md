@@ -48,14 +48,36 @@ that `README.md` file is in the `Changes to be committed` section
 and indicated as `new file`.
 
 **Sourcetree**
+1. In the `Unstaged files` section,
+click the `+` button at the far right of `README.md` file.
+1. Now, `README.md` file is in `Staged files` section.
 
 Now, the files begin to be tracked by git,
 but are not accepted as a version yet.
 In order to be a version, *commit* action is necessary.
 
+## Commit
+
+**git bash**
+1. Type
+    ```
+    $ git commit -m '<commit_message>'
+    ```
+1. `git status` command now says
+"nothing to commit, working tree clean".
+1. Commit history can be shown by
+    ```
+    $ git log
+    ```
+
+**Sourcetree**
+1. Click `Commit` in the toolbar.
+1. Write `<commit_message>` in the box at the bottom of the window.
+1. Commit history is shown by selecting `WORKSPACE - History` at the sidebar
+
 ## Stage
 
-## Commit
+## To be studied more
 
 `?? README.md`
 
