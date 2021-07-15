@@ -1,6 +1,48 @@
-install sourcetree v3.4.5
+# Version Control System : git with Sourcetree
 
-## user setup
+git
+- MS Windows version
+- version : 2.92.2
+- Homepage : https://www.git-scm.com
+
+Sourcetree
+- Version : 3.4.5
+- Homepage : https://www.sourcetreeapp.com
+
+## Setup
+
+### Set-up User
+
+**git bash**
+```
+$ git config --global user.name "<user_name>"
+$ git config --global user.email "<email_address>"
+```
+
+**Sourcetree**
+1. In the menubar, `[Tools] - [Options]`
+1. Select `[General]` tab.
+1. In `Default user information`,
+provide `Full Name` and `Email address`.
+
+### Set-up Editor
+
+**git bash**
+- gvim
+    ```
+    $ git config --global core.editor "'C:\Program Files\Vim\vim82\gvim.exe' --nofork '%*'" 
+    ```
+- Visual Studio Code
+    ```
+    $ git config --global core.editor "code --wait"
+    ```
+
+### Check Settings
+
+**git bash**
+```
+$ git config --list
+```
 
 ## Create a new repository
 
@@ -76,6 +118,12 @@ In order to be a version, *commit* action is necessary.
 1. Commit history is shown by selecting `WORKSPACE - History` at the sidebar
 
 ## Stage
+
+## Reference
+- https://opentutorials.org
+
+## Memos
+- Dropbox, Google Drive are integrated with simple VCS.
 
 ## To be studied more
 
